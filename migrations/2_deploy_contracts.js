@@ -1,5 +1,7 @@
-const VoiceContract = artifacts.require("VoiceContract");
+const Sample = artifacts.require("Ethereum.sol");
+const Voice = artifacts.require("Voice.sol");
 
 module.exports = function(deployer) {
-	deployer.deploy(VoiceContract);
+	deployer.deploy(Sample);
+	deployer.deploy(Voice);
 };
