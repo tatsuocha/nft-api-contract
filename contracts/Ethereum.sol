@@ -1,6 +1,6 @@
 pragma solidity >=0.4.22 <0.9.0;
 
-contract VoiceContract {
+contract Ethereum {
 	uint256 storedData;
 
 	function get() public view returns (uint256) {
