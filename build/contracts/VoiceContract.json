@@ -1,0 +1,615 @@
+{
+  "contractName": "VoiceContract",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "get",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "x",
+          "type": "uint256"
+        }
+      ],
+      "name": "create",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.1+commit.c8a2cb62\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"get\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"x\",\"type\":\"uint256\"}],\"name\":\"create\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/VoiceContract.sol\":\"VoiceContract\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/VoiceContract.sol\":{\"keccak256\":\"0x20affe303fba9c637dd34745a0982586c908b2c94428a7271b1ac788c5d50384\",\"urls\":[\"bzzr://3152cfde8875394a8eb39a25cc479f058262ec821a74abdae853cf1c8f225627\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5060e68061001f6000396000f3fe6080604052600436106043576000357c0100000000000000000000000000000000000000000000000000000000900480636d4ce63c146048578063780900dc146070575b600080fd5b348015605357600080fd5b50605a60a7565b6040518082815260200191505060405180910390f35b348015607b57600080fd5b5060a560048036036020811015609057600080fd5b810190808035906020019092919050505060b0565b005b60008054905090565b806000819055505056fea165627a7a72305820ffabceb20992312066ce69908bcbb80bb5fa2691269ca6fccbbfed985de6ed0a0029",
+  "deployedBytecode": "0x6080604052600436106043576000357c0100000000000000000000000000000000000000000000000000000000900480636d4ce63c146048578063780900dc146070575b600080fd5b348015605357600080fd5b50605a60a7565b6040518082815260200191505060405180910390f35b348015607b57600080fd5b5060a560048036036020811015609057600080fd5b810190808035906020019092919050505060b0565b005b60008054905090565b806000819055505056fea165627a7a72305820ffabceb20992312066ce69908bcbb80bb5fa2691269ca6fccbbfed985de6ed0a0029",
+  "sourceMap": "34:179:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;34:179:0;;;;;;;",
+  "deployedSourceMap": "34:179:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;82:70;;8:9:-1;5:2;;;30:1;27;20:12;5:2;82:70:0;;;:::i;:::-;;;;;;;;;;;;;;;;;;;155:56;;8:9:-1;5:2;;;30:1;27;20:12;5:2;155:56:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;155:56:0;;;;;;;;;;;;;;;;;:::i;:::-;;82:70;118:7;138:10;;131:17;;82:70;:::o;155:56::-;206:1;193:10;:14;;;;155:56;:::o",
+  "source": "pragma solidity >=0.4.22 <0.9.0;\n\ncontract VoiceContract {\n\tuint256 storedData;\n\n\tfunction get() public view returns (uint256) {\n\t\treturn storedData;\n\t}\n\n\tfunction create(uint256 x) public {\n\t\tstoredData = x;\n\t}\n}\n",
+  "sourcePath": "C:\\Users\\tatsumi\\Desktop\\nft-api-contract\\contracts\\VoiceContract.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/VoiceContract.sol",
+    "exportedSymbols": {
+      "VoiceContract": [
+        22
+      ]
+    },
+    "id": 23,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 22,
+        "linearizedBaseContracts": [
+          22
+        ],
+        "name": "VoiceContract",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 3,
+            "name": "storedData",
+            "nodeType": "VariableDeclaration",
+            "scope": 22,
+            "src": "60:18:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 2,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "60:7:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 10,
+              "nodeType": "Block",
+              "src": "127:25:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 8,
+                    "name": "storedData",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 3,
+                    "src": "138:10:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 7,
+                  "id": 9,
+                  "nodeType": "Return",
+                  "src": "131:17:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 11,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "get",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "94:2:0"
+            },
+            "returnParameters": {
+              "id": 7,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 6,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11,
+                  "src": "118:7:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "118:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "117:9:0"
+            },
+            "scope": 22,
+            "src": "82:70:0",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 20,
+              "nodeType": "Block",
+              "src": "189:22:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 18,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 16,
+                      "name": "storedData",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3,
+                      "src": "193:10:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 17,
+                      "name": "x",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 13,
+                      "src": "206:1:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "193:14:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 19,
+                  "nodeType": "ExpressionStatement",
+                  "src": "193:14:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 21,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "create",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 14,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13,
+                  "name": "x",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 21,
+                  "src": "171:9:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 12,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "171:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "170:11:0"
+            },
+            "returnParameters": {
+              "id": 15,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "189:0:0"
+            },
+            "scope": 22,
+            "src": "155:56:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 23,
+        "src": "34:179:0"
+      }
+    ],
+    "src": "0:214:0"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/VoiceContract.sol",
+      "exportedSymbols": {
+        "VoiceContract": [
+          22
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.4",
+            ".22",
+            "<",
+            "0.9",
+            ".0"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "0:32:0"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            22
+          ],
+          "name": "VoiceContract",
+          "scope": 23
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "storedData",
+              "scope": 22,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint256",
+                  "type": "uint256"
+                },
+                "id": 2,
+                "name": "ElementaryTypeName",
+                "src": "60:7:0"
+              }
+            ],
+            "id": 3,
+            "name": "VariableDeclaration",
+            "src": "60:18:0"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "get",
+              "scope": 22,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4,
+                "name": "ParameterList",
+                "src": "94:2:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 11,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 5,
+                        "name": "ElementaryTypeName",
+                        "src": "118:7:0"
+                      }
+                    ],
+                    "id": 6,
+                    "name": "VariableDeclaration",
+                    "src": "118:7:0"
+                  }
+                ],
+                "id": 7,
+                "name": "ParameterList",
+                "src": "117:9:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 7
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 3,
+                          "type": "uint256",
+                          "value": "storedData"
+                        },
+                        "id": 8,
+                        "name": "Identifier",
+                        "src": "138:10:0"
+                      }
+                    ],
+                    "id": 9,
+                    "name": "Return",
+                    "src": "131:17:0"
+                  }
+                ],
+                "id": 10,
+                "name": "Block",
+                "src": "127:25:0"
+              }
+            ],
+            "id": 11,
+            "name": "FunctionDefinition",
+            "src": "82:70:0"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "create",
+              "scope": 22,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "x",
+                      "scope": 21,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint256",
+                          "type": "uint256"
+                        },
+                        "id": 12,
+                        "name": "ElementaryTypeName",
+                        "src": "171:7:0"
+                      }
+                    ],
+                    "id": 13,
+                    "name": "VariableDeclaration",
+                    "src": "171:9:0"
+                  }
+                ],
+                "id": 14,
+                "name": "ParameterList",
+                "src": "170:11:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 15,
+                "name": "ParameterList",
+                "src": "189:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 3,
+                              "type": "uint256",
+                              "value": "storedData"
+                            },
+                            "id": 16,
+                            "name": "Identifier",
+                            "src": "193:10:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 13,
+                              "type": "uint256",
+                              "value": "x"
+                            },
+                            "id": 17,
+                            "name": "Identifier",
+                            "src": "206:1:0"
+                          }
+                        ],
+                        "id": 18,
+                        "name": "Assignment",
+                        "src": "193:14:0"
+                      }
+                    ],
+                    "id": 19,
+                    "name": "ExpressionStatement",
+                    "src": "193:14:0"
+                  }
+                ],
+                "id": 20,
+                "name": "Block",
+                "src": "189:22:0"
+              }
+            ],
+            "id": 21,
+            "name": "FunctionDefinition",
+            "src": "155:56:0"
+          }
+        ],
+        "id": 22,
+        "name": "ContractDefinition",
+        "src": "34:179:0"
+      }
+    ],
+    "id": 23,
+    "name": "SourceUnit",
+    "src": "0:214:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.1+commit.c8a2cb62.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xe9fE12b32EB6BDcE4344B037fF266903f0152614",
+      "transactionHash": "0x1b9c461e622ae2c16c9639c0cbda78decc75d8a4e76357a7a0479798993f2323"
+    }
+  },
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2024-06-20T13:11:49.674Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
